@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위험 감지 시스템</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">관리자페이지</a></li>
+                <li><a href="#">근골격계 위험 감지</a></li>
+                <li><a href="#">알림</a></li>
+                <li><a href="#">근로자관리</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">CCTV</a></li>
+                <li><a href="#">모니터링</a></li>
+                <li><a href="#">작업장관리</a></li>
+                <li><a href="#">직원관리</a></li>
+            </ul>
+            <button id="logoutButton">로그아웃</button>
+        </nav>
+        <main class="main-content">
+            <header class="main-header">
+                <h1 class="system-title">위험 감지 시스템</h1>
+            </header>
+            <section class="content">
+                <div class="cctv-stream">
+                    <h2>실시간 CCTV 영상</h2>
+                    <video id="cctvVideo" controls autoplay></video>
+                </div>
+                <div class="alerts">
+                    <h2>이슈 알림</h2>
+                    <ul id="alertList">
+                        <!-- 알림 항목들이 여기에 추가됩니다 -->
+                    </ul>
+                </div>
+                <button id="sendNotification">알림 전송</button>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #007BFF;
+    padding-top: 20px;
+    border-right: 1px solid #ccc; /* 구분선 추가 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+    border-bottom: 1px solid #0056b3; /* 구분선 추가 */
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #0056b3;
+}
+
+#logoutButton {
+    margin: 20px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logoutButton:hover {
+    background-color: #0056b3;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.system-title {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cctv-stream {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cctv-stream video {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.alerts {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.alerts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alerts li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    border-left: 5px solid;
+}
+
+.alerts li.green { border-color: #28a745; }
+.alerts li.yellow { border-color: #ffc107; }
+.alerts li.orange { border-color: #fd7e14; }
+.alerts li.red { border-color: #dc3545; }
+
+button#sendNotification {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button#sendNotification:hover {
+    background-color: #004494;
+}
