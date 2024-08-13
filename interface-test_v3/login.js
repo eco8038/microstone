@@ -29,13 +29,4 @@ function checkStuff() {
         msg.innerHTML = "";
     }
 
-    // Email validation regex
-    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!re.test(email.value)) {
-        msg.innerHTML = "유효한 이메일을 입력해 주세요";
-        email.focus();
-        return false;
-    } else {
-        msg.innerHTML = "";
-    }
 }
